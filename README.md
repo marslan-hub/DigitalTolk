@@ -15,14 +15,22 @@ datetime-api/
 │── app.py
 │── Dockerfile
 │── requirements.txt
-│── README.md
 ```
 
 ### **Setup and Usage**  
 
 #### **Run Locally (Without Docker)**
-1. Install dependencies:  
+   
+   
+   
+1. Install dependencies  
    ```bash
+   apt install python3 python3-pip python3.8-venv
+
+   python3 -m venv .venv
+
+   source .venv/bin/activate
+
    pip install -r requirements.txt
    ```
 2. Start the application:  
@@ -58,7 +66,6 @@ terraform-bastion/
 │── main.tf
 │── variables.tf
 │── outputs.tf
-│── README.md
 ```
 
 ### **Setup and Usage**
@@ -69,7 +76,6 @@ terraform-bastion/
 2. **Apply the Configuration**  
    ```bash
    terraform apply -var="region=us-east-1" \
-                   -var="ami_id=ami-0abcdef1234567890" \
                    -var="subnet_id=subnet-0123456789abcdef" \
                    -var="key_name=my-key" \
                    -var="security_group=sg-0123456789abcdef"
@@ -92,7 +98,3 @@ terraform-bastion/
 DevOps Engineer  
 
 ---
-
-## **License**
-This project is licensed under the MIT License.
-

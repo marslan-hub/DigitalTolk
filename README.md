@@ -27,7 +27,7 @@ datetime-api/
    ```bash
    apt install python3 python3-pip python3.8-venv
 
-   cd datetime-api/
+   cd datetime-api
 
    python3 -m venv .venv
 
